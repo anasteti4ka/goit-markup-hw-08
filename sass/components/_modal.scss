@@ -1,0 +1,221 @@
+.backdrop {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.module {
+  position: absolute;
+  background-color: $white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.exit-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+
+    .exit-icon-svg {
+      width: 18px;
+      height: 18px;
+      fill: $black;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .exit-icon-svg {
+      fill: $accent-color;
+    }
+  }
+}
+
+.contmodule {
+  width: 528px;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $grey;
+
+  &-text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $black;
+    padding-top: 40px;
+    margin-bottom: 12px;
+  }
+}
+
+.field {
+  display: flex;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  width: 448px;
+  height: 40px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $accent-color;
+
+    + .modul-name-icon-svg {
+      fill: $accent-color;
+    }
+
+    + .modul-phone-icon-svg {
+      fill: $accent-color;
+    }
+
+    + .modul-email-icon-svg {
+      fill: $accent-color;
+    }
+  }
+}
+
+.modul-name-icon-svg {
+  position: absolute;
+  top: 104px;
+  right: 458px;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  fill: $black;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modul-phone-icon-svg {
+  position: absolute;
+  top: 172px;
+  right: 458px;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  fill: $black;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modul-email-icon-svg {
+  position: absolute;
+  top: 240px;
+  right: 458px;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  fill: $black;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:focus {
+  outline-color: $accent-color;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+.field-text {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: 448px;
+  height: 120px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form2 {
+  display: inline-block;
+}
+
+.agreement-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $grey;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    fill: $black;
+  }
+
+  &:checked + &-icon {
+    fill: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../img/icons/checked-icon2.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.agreement-link {
+  color: $accent-color;
+}

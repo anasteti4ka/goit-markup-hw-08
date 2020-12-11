@@ -1,0 +1,61 @@
+.desc-content1::before {
+  content: "";
+  display: block;
+  background-color: $whitegrey;
+  width: 270px;
+  height: 120px;
+  background-image: url(../img/antenna.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.desc-content2::before {
+  content: "";
+  display: block;
+  background-color: $whitegrey;
+  width: 270px;
+  height: 120px;
+  background-image: url(../img/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.desc-content3::before {
+  content: "";
+  display: block;
+  background-color: $whitegrey;
+  width: 270px;
+  height: 120px;
+  background-image: url(../img/diagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.desc-content4::before {
+  content: "";
+  display: block;
+  background-color: $whitegrey;
+  width: 270px;
+  height: 120px;
+  background-image: url(../img/astronaut.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $black;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}

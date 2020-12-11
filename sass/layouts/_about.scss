@@ -1,0 +1,51 @@
+.about-us {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $black;
+  padding-bottom: 50px;
+
+  &-wwd1 {
+    padding-left: 83px;
+    padding-right: 82px;
+  }
+
+  &-wwd2 {
+    padding-left: 86px;
+    padding-right: 84px;
+    max-width: 370px;
+  }
+
+  &-wwd3 {
+    padding-left: 91px;
+    padding-right: 90px;
+    max-width: 370px;
+  }
+}
+
+.content-box-about {
+  width: calc(100% / 3 - 30px);
+  position: relative;
+  margin: 10px;
+  width: 370px;
+  height: 294px;
+
+  & > .text-wwd {
+    position: absolute;
+    top: 224px;
+    right: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: $white;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}
