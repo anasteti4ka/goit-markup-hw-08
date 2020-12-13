@@ -1,11 +1,16 @@
 .about-us {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: $black;
-  padding-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+  }
 
   &-wwd1 {
     padding-left: 83px;
@@ -28,7 +33,6 @@
 .content-box-about {
   width: calc(100% / 3 - 30px);
   position: relative;
-  margin: 10px;
   width: 370px;
   height: 294px;
 

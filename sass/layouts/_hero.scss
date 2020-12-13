@@ -4,11 +4,11 @@
     url(../img/heroimg.480.png);
   background-size: cover;
   height: 400px;
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, #2f303a40, #2f303a40),
       url(/img/heroimg.786.png);
     background-size: cover;
-    height: 600px;
+    height: 400px;
   }
 
   @media screen and (min-width: 1200px) {
