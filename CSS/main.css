@@ -716,21 +716,22 @@ p {
   background-image: linear-gradient(to right, #2f303a40, #2f303a40), url(../img/heroimg.480.png);
   background-size: cover;
   height: 400px;
-  /*   background: #2f303a;
-  background-image: linear-gradient(to right, #2f303a40, #2f303a40),
-    url(../img/titlebackimg.jpg);
-  background-size: cover;
-  height: 600px; */
-  /*   &-text {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white;
-    padding-bottom: 30px;
-  } */
+}
+
+@media screen and (min-width: 786px) {
+  .title {
+    background-image: linear-gradient(to right, #2f303a40, #2f303a40), url(/img/heroimg.786.png);
+    background-size: cover;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    background-image: linear-gradient(to right, #2f303a40, #2f303a40), url(../img/titlebackimg.jpg);
+    background-size: cover;
+    height: 600px;
+  }
 }
 
 .title-text {
@@ -746,19 +747,35 @@ p {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .title-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 30px;
+  }
+}
+
 .hero-content {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   min-height: 84px;
   padding-top: 118px;
   padding-bottom: 118px;
-  /*  display: flex;
-  flex-wrap: wrap;
-  text-align: center; 
-  max-width: 696px; 
-  padding-top: 200px;
-  padding-bottom: 200px; */
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 696px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .desc-content1::before {
