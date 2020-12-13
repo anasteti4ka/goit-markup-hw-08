@@ -107,6 +107,13 @@ header {
   padding-bottom: 25px;
 }
 
+@media screen and (max-width: 767px) {
+  header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -190,9 +197,16 @@ p {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -287,11 +301,21 @@ p {
 
 .portfolio-button {
   display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    /*    padding-bottom: 50px; */
+  }
 }
 
 .btn-p:not(:last-child) {
+  margin-bottom: 15px;
   margin-right: 8px;
 }
 
@@ -341,16 +365,64 @@ p {
   justify-content: center;
 }
 
+.mobile-menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+}
+
+.mobile-menu-button:hover .mobile-menu-icon,
+.mobile-menu-button:focus .mobile-menu-icon {
+  fill: #2196f3;
+}
+
 .menu {
-  display: inline-flex;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: inline-flex;
+  }
 }
 
 .menu-item {
   position: relative;
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-item {
+    padding-bottom: 40px;
+  }
+}
+
+.mobile-menu {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .social-icons {
@@ -496,6 +568,13 @@ p {
   left: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .underline-st::after {
+    position: relative;
+    bottom: -8px;
+  }
+}
+
 .underline:hover::after,
 .underline:focus::after {
   content: "";
@@ -529,6 +608,13 @@ p {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts-header {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}
+
 .contact-icons-svg1 {
   width: 16px;
   height: 12px;
@@ -552,10 +638,30 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu-icon {
+  width: 40px;
+  height: 40px;
+  fill: #212121;
+  background-color: #fff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-list {
+  text-align: center;
+}
+
 .navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    flex-grow: 1;
+  }
 }
 
 .portfolio-border {
@@ -563,10 +669,11 @@ p {
 }
 
 .portfolio-figure {
+  /*   margin-top: -30px;
+  margin-left: -30px; */
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  justify-content: space-between;
 }
 
 .portfolio-figure-portf {
@@ -577,15 +684,34 @@ p {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 480px) {
+  .portfolio-figure {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-figure {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
 .port-item {
   margin-top: 30px;
-  margin-left: 30px;
+  /* margin-left: 30px;  */
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-item:hover, .port-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 480px) {
+  .port-item {
+    margin-left: 0px;
+  }
 }
 
 .overflow {

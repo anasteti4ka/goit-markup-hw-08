@@ -1,11 +1,33 @@
 .menu {
-  display: inline-flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+  }
 }
 
 .menu-item {
   position: relative;
 
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+}
+
+.mobile-menu {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

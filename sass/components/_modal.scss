@@ -24,6 +24,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 
 .exit-icon-link {
@@ -66,6 +70,10 @@
   padding-right: 40px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (max-width: 1199px) {
+    width: 370px;
+  }
 }
 
 .form {
@@ -120,6 +128,10 @@
     + .modul-email-icon-svg {
       fill: $accent-color;
     }
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 370px;
   }
 }
 
@@ -181,6 +193,10 @@
   line-height: 16px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+
+  @media screen and (max-width: 1199px) {
+    width: 370px;
+  }
 }
 
 .form2 {
