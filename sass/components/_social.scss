@@ -9,7 +9,9 @@
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    padding-left: 70px;
+    @media screen and (min-width: 1200px) {
+      padding-left: 70px;
+    }
   }
 
   &-item:not(:last-child) {
