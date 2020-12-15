@@ -64,15 +64,22 @@
 }
 
 .contmodule {
-  width: 528px;
+  width: 400px;
   height: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (max-width: 1199px) {
-    width: 370px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

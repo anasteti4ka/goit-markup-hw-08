@@ -107,17 +107,20 @@
 
 .mobile-menu-button {
   display: none;
+  padding: 0;
+  outline: none;
+
   @media screen and (max-width: 767px) {
     display: block;
     width: 40px;
     height: 40px;
     padding: 0;
+    outline: none;
   }
 }
 
-.mobile-menu-button:hover,
-.mobile-menu-button:focus {
-  .mobile-menu-icon {
-    fill: $accent-color;
-  }
+.mobile-menu-button:hover .mobile-menu-icon,
+.mobile-menu-button:focus .mobile-menu-icon {
+  fill: $accent-color;
+  outline: none;
 }

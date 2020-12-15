@@ -21,13 +21,14 @@
                 <li class="menu-item"><a href="./portfolio.html" class="link underline">Портфолио</a></li>
                 <li class="menu-item"><a href="#contacts" class="link underline">Контакты</a></li>
             </ul>
-            <button class="mobile-menu-button">
+            <button class="mobile-menu-button"  aria-expanded="false" aria-controls="mobile-menu"  data-menu-button>
                 <svg class="mobile-menu-icon">
-                    <use href="./img/icons/sprite.svg.svg#mobile-menu-icon"></use>
+                    <use class="mobile-close" href="./img/icons/sprite.svg.svg#mobile-menu-icon"></use>
+                    <use class="mobile-open" href="./img/icons/sprite.svg.svg#mobile-open"></use>
                 </svg>
             </button>
         </nav>
-        <ul class="list menu">
+        <ul class="list menu tab">
             <li class="menu-item mailto">
                 <a href="mailto:info@devstudio.com" class="contacts-header">
                 <svg class="contact-icons-svg1">
@@ -45,7 +46,7 @@
         </ul>
         </div>
     </header>
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu" data-menu>
         <ul class="list mobile-menu-list">
             <li class="menu-item"><a href="./index.html" class="link underline-st">Студия</a></li>
             <li class="menu-item"><a href="./portfolio.html" class="link underline">Портфолио</a></li>
@@ -443,5 +444,6 @@
         </div>
     </div>  
 <script src="./js/model.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
